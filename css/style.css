@@ -1,0 +1,225 @@
+/* 
+Very Dark Blue: hsl(243, 87%, 12%)
+Desaturated Blue: hsl(238, 22%, 44%)
+Accent
+Bright Blue: hsl(224, 93%, 58%)
+Moderate Cyan: hsl(170, 45%, 43%)
+Neutral
+Light Grayish Blue: hsl(240, 75%, 98%)
+Light Gray: hsl(0, 0%, 75%) */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+
+/* intilizing styles */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    margin: 0;
+
+}
+
+/* Header Menu*/
+.header {
+    /* background-color: #f1f1f1; */
+    height: 100vh;
+    width: 1440px;
+    margin: 0;
+}
+
+.header__navigation {
+    padding: 2rem;
+}
+
+.header__navigation::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header__navigation ul {
+    list-style-type: none;
+}
+
+.header__navigation ul li {
+    list-style-type: none;
+    display: inline-block;
+
+}
+
+.header__navigation ul li:not(:last-child) {
+    margin-right: 6rem;
+}
+
+.header__navigation ul li a:link,
+.header__navigation ul li a:visited {
+    text-decoration: none;
+    font-size: 2rem;
+    /* font-weight: 400; */
+    color: hsl(243, 87%, 12%);
+}
+
+.header__container .header__navigation {
+    width: 100%;
+}
+
+.header__container .header__navigation .header__logo {
+    float: left;
+}
+
+.header__container .header__navigation .menu {
+    float: right;
+    text-align: center;
+}
+
+
+/* Header content */
+
+.header .header__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    margin-top: 3rem;
+
+}
+
+.header .header__inner .header__content {
+    grid-column: 1/2;
+    font-size: 6rem;
+    padding: 3rem 6rem 3rem 3rem;
+    margin: 0;
+}
+
+.header .header__inner .header__img {
+    grid-column: 2/3;
+}
+
+.heading__paragraph {
+    font-size: 2rem;
+    line-height: 1.7;
+}
+
+.heading {
+    font-size: 4.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.bts .search-input,
+.bts .btn {
+    font-size: 1.5rem;
+
+}
+
+.bts {
+    margin-top: 2rem;
+
+}
+
+.bts .btn {
+    padding: 1.5rem 7rem;
+    color: #ffffff;
+    background-color: hsl(224, 93%, 58%);
+    border-radius: 3px;
+    border: none;
+
+}
+
+.bts .search-input {
+    padding: 1.5rem 10rem 1.5rem 2rem;
+    border-radius: 3px;
+    color: hsl(0, 0%, 75%);
+    border: 1px solid hsl(0, 0%, 75%);
+    margin-right: 2rem;
+}
+
+.img-box {
+    height: 100%;
+
+}
+
+.img-box img {
+    width: 100%;
+
+}
+
+@media screen and (max-width: 700px) {
+
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 50%;
+    }
+
+    .header .header__inner {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 2rem;
+        margin-top: 3rem;
+
+    }
+
+    .header .header__inner .header__content {
+        grid-row: 1/2;
+        grid-column: 1/ end;
+        /* font-size: 6rem; */
+        padding: 4rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    .header .header__inner .header__img {
+        grid-row: 2/3;
+        grid-column: 1/ end;
+    }
+
+    .header {
+        width: 37.5rem;
+    }
+
+    .header__container .header__navigation .menu {
+        display: none;
+    }
+
+    .bts .search-input,
+    .bts .btn {
+        font-size: 1.5rem;
+        display: block;
+        width: 100%;
+    }
+
+    .bts {
+        margin-top: 2rem;
+
+    }
+
+    .bts .btn {
+        padding: 1.5rem 7rem;
+        color: #ffffff;
+        background-color: hsl(224, 93%, 58%);
+        border-radius: 3px;
+        border: none;
+        margin-top: 2rem;
+
+    }
+
+    .bts .search-input {
+        padding: 1.5rem 10rem 1.5rem 2rem;
+        border-radius: 3px;
+        color: hsl(0, 0%, 75%);
+        border: 1px solid hsl(0, 0%, 75%);
+        margin-right: 2rem;
+    }
+
+}
